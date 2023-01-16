@@ -1,6 +1,34 @@
-h1 {
-  color: dodgerblue;
+/* body element on html setting properties for whole document */
+body {
+  background-color: #567189;
+  color: #393e46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: none;
+  min-height: 100vh;
 }
-h3 {
-  color: bisque;
+
+/* header id in html document body */
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 20vh;
+}
+
+/* group of buttons below header */
+#button-group {
+  display: inline-block;
+}
+
+/* setting text color of all  */
+a {
+  color: burlywood;
+}
+
+/* removing underline in link */
+a:link {
+  text-decoration: none;
 }
