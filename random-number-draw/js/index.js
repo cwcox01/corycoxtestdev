@@ -8,9 +8,21 @@ let drawListener = document.querySelector(".draw-btn");
 
 let numberDrawn = document.querySelector(".number-drawn");
 
+let addNumber = document.querySelector(".btn-add");
+
 drawListener.addEventListener("click", numberGenerator);
 
 resetListener.addEventListener("click", resetNumber);
+
+addNumber.addEventListener("click", numberAdd);
+
+const numberAddZeroValue = 0;
+if (numberDrawn >= 21) {
+  numberDrawn.innerHTML = numberAddZeroValue;
+  alert("Please reset the draw.");
+} else {
+  numberDrawn.innerHTML++;
+}
 
 function numberGenerator() {
   let randomNumber = numberArray[Math.floor(Math.random() * 20)];
@@ -20,4 +32,14 @@ function numberGenerator() {
 function resetNumber() {
   let valueZero = 0;
   numberDrawn.innerHTML = valueZero;
+}
+
+function numberAdd() {
+  const numberAddZeroValue = 0;
+  if (numberDrawn.innerHTML >= 21) {
+    numberDrawn.innerHTML = numberAddZeroValue;
+    alert("Please draw again.");
+  } else {
+    numberDrawn.innerHTML++;
+  }
 }
