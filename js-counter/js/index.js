@@ -6,7 +6,6 @@ let zeroValue = 0;
 
 countIncrease.addEventListener("click", increaseCount);
 countDecrease.addEventListener("click", decreaseCount);
-countReset.addEventListener("click", reset);
 
 function increaseCount() {
   let countIncreaseDisplay = zeroValue++;
@@ -17,10 +16,5 @@ function increaseCount() {
 function decreaseCount() {
   let countDecreaseDisplay = zeroValue--;
   numberCount.innerHTML = countDecreaseDisplay;
-  return;
-}
-
-function reset() {
-  numberCount.innerHTML = 0;
   return;
 }
