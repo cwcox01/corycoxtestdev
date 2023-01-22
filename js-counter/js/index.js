@@ -19,8 +19,3 @@ function decreaseCount() {
   numberCount.innerHTML = countDecreaseDisplay;
   return;
 }
-
-function reset() {
-  numberCount.innerHTML = 0;
-  return;
-}
