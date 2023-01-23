@@ -1,0 +1,43 @@
+body {
+  background-color: #243763;
+  color: #ad8e70;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#number-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #ad8e70;
+  color: #1c315e;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-color: #1c315e;
+  border-style: solid;
+  border-width: 0.25rem;
+}
+
+.btn:hover {
+  background-color: #1c315e;
+  color: #ad8e70;
+}
+
+.count-header {
+  font-size: 1.5rem;
+}
+
+.number-counter {
+  font-size: 4.5rem;
+}

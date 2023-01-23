@@ -1,0 +1,34 @@
+.App {
+  background-color: #567189;
+  color: #393e46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: none;
+  min-height: 100vh;
+}
+
+/* header id in html document body */
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 20vh;
+}
+
+/* group of buttons below header */
+#button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+/* setting text color of all  */
+a {
+  color: burlywood;
+}
+
+/* removing underline in link */
+a:link {
+  text-decoration: none;
+}
